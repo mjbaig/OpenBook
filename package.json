@@ -1,0 +1,23 @@
+{
+  "name": "openbook",
+  "version": "1.0.0",
+  "description": "Open Source Social Site",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjbaig/OpenBook.git"
+  },
+  "keywords": [
+    "social",
+    "studies"
+  ],
+  "author": "Maz Baig & Taimore Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjbaig/OpenBook/issues"
+  },
+  "homepage": "https://github.com/mjbaig/OpenBook#readme"
+}
