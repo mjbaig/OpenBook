@@ -10,21 +10,22 @@ let router = new Router();
 
 const port = 8080;
 
-(async () => {
-	try{
+const env = process.argv[2];
 
-		router.get('/', (ctx, next) => {
-			ctx.body = "Hello World";
-		});
+router.get('/', (ctx, next) => {
+	ctx.body = "Hello World";
+});
 
-		app
-			.use(router.routes())
-			.use(router.allowedMethods)
-			.listen(port, () => {
-				console.log(`Started application on ${port}`);
-			});
+app.on('error', (err, ctx) => {
+	console.log('server error', err, ctx);
+});
 
-	}catch(error){
+app
+	.use(router.routes())
+	.use(router.allowedMethods)
+	.listen(port, () => {
+		console.log(`Started application on ${port}`);
+	});
 
-	}
-})();
+
+module.exports = app;
