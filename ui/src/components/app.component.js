@@ -1,7 +1,7 @@
 import {h, Component} from 'preact';
 import {Router} from 'preact-router';
 
-import {Test} from './test/test.component';
+import Test from './test/test.component'; 
 
 export default class App extends Component {
     /** This runs when the route moves
@@ -17,7 +17,6 @@ export default class App extends Component {
 
      render(){
          return (<div id="app">
-                    <div>Hi</div>
                     <Test />
                 </div>);
      };
