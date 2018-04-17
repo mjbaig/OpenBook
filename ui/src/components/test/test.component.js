@@ -1,11 +1,11 @@
-import _ from 'lodash';
+import {h, Component} from 'preact';
+import {Link} from 'preact-router';
+import './test.style.css';
 
-export function component(){
-
-    var element = document.createElement('div');
-
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-    return element;
-
+export default class Test extends Component {
+    render() {
+        return (
+            <div>Hello World</div>
+        );
+    }
 }
